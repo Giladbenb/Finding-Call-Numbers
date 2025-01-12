@@ -1,0 +1,62 @@
+﻿<Window x:Class="Prog3B.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prog3B"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Border CornerRadius="10" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7be9f6" Offset="0.0"/>
+                    <GradientStop Color="#f083da" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <StackPanel VerticalAlignment="Top">
+
+            <TextBlock Text="Please Select One:"
+                           FontWeight="Bold"
+                           FontFamily="helvetica"
+                           FontSize="22"
+                           Foreground="Black"
+                           HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <Button x:Name="FCN"
+                        Content="Finding Call Numbers:"
+                        BorderBrush="Black"
+                        Background="LightBlue"
+                        BorderThickness="2"
+                        Margin="142,320,118,0"
+                        VerticalAlignment="Top"
+                        Click="FCN_Click"
+                        Grid.ColumnSpan="1" Height="78"/>
+
+
+        <Button x:Name="IA"
+                        Content="Identifying Areas:"
+                        BorderBrush="Black"
+                        Background="LightBlue"
+                        BorderThickness="2"
+                        Margin="142,204,118,0"
+                        VerticalAlignment="Top"
+                        Click="IA_Click"
+                        Grid.ColumnSpan="1" Height="78"/>
+
+
+        <Button x:Name="RB"
+                        Content="Replacing Books:"
+                        BorderBrush="Black"
+                        Background="LightBlue"
+                        BorderThickness="2"
+                        Margin="142,83,118,0"
+                        VerticalAlignment="Top"
+                        Grid.ColumnSpan="1" Height="78" Click="RB_Click"/>
+        
+         
+
+    </Grid>
+</Window>
